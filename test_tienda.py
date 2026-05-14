@@ -5,7 +5,7 @@ def test_login_exitoso(driver):
     login_page = LoginPage(driver)
     login_page.open()
     login_page.login("standard_user", "secret_sauce")
-    assert "defecto" in driver.current_url
+    assert "inventory.html" in driver.current_url
 
 def test_agregar_carrito(driver):
     login_page = LoginPage(driver)
